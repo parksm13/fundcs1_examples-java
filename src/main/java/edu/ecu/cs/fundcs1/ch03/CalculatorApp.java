@@ -1,3 +1,6 @@
+//TODO: One file in the book, had to split into two files
+//TODO: Not clear how Calculator is being used here (it's in the same package)
+
 // BEGIN example
 package edu.ecu.cs.fundcs1.ch03;
 
