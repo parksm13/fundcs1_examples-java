@@ -59,14 +59,17 @@
 
 //TODO: Should package declaration be included in the example?
 //TODO: Is this example too large?
+//TODO: Should package name be ECU specific? or should it match the text exactly?
 
 package edu.ecu.cs.fundcs1.ch03;
 
 // BEGIN example
 import java.lang.System;
 
-public class HelloWorld {
-    public static void main() {
+public class HelloWorld
+{
+    public static void main()
+    {
         System.out.println("Hello, World!");
     }
 }
