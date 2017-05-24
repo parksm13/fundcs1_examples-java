@@ -1,3 +1,4 @@
+// BEGIN example
 package edu.ecu.cs.fundcs1.ch03;
 
 public class CalculatorApp
@@ -23,3 +24,4 @@ public class CalculatorApp
         System.out.format("Absolute value of %d is: %d", num1, myCalc.absolute(num1));
     }
 }
+// END example
