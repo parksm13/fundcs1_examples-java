@@ -20,7 +20,7 @@ public class ConsoleReadWriteTest {
     public static void beginConsoleReadWriteTestOutput() {
         System.out.format("%nBEGIN ConsoleReadWriteTest" +
                           System.lineSeparator() +
-                          "============================" +
+                          "==========================" +
                           System.lineSeparator());
     }
 
@@ -37,7 +37,7 @@ public class ConsoleReadWriteTest {
 
     @AfterClass
     public static void endConsoleReadWriteTestOutput() {
-        System.out.println("====================" +
+        System.out.println("========================" +
                            System.lineSeparator() +
                            "END ConsoleReadWriteTest" +
                            System.lineSeparator());

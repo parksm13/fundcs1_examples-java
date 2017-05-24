@@ -32,7 +32,7 @@ public class HelloWorldTest {
 
     @AfterClass
     public static void endHelloWorldTestOutput() {
-        System.out.println("====================" +
+        System.out.println("==================" +
                            System.lineSeparator() +
                            "END HelloWorldTest" +
                            System.lineSeparator());
