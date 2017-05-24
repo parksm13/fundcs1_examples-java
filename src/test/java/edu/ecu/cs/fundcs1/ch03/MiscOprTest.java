@@ -2,20 +2,23 @@ package edu.ecu.cs.fundcs1.ch03;
 
 import org.junit.*;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class CalculatorAppTest {
+public class MiscOprTest {
 
     // used to test console output from main method in another class
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @BeforeClass
-    public static void beginCalculatorAppTestOutput() {
-        System.out.format("%nBEGIN CalculatorAppTest" +
+    public static void beginMiscOprTestOutput() {
+        System.out.format("%nBEGIN MiscOprTest" +
                           System.lineSeparator() +
-                          "=======================" +
+                          "=================" +
                           System.lineSeparator());
     }
 
@@ -32,30 +35,26 @@ public class CalculatorAppTest {
 
     @AfterClass
     public static void endHelloWorldTestOutput() {
-        System.out.println("=====================" +
+        System.out.println("===============" +
                            System.lineSeparator() +
-                           "END CalculatorAppTest" +
+                           "END MiscOprTest" +
                            System.lineSeparator());
     }
 
     @Test
-    public void testCalculatorAppMain() {
-        CalculatorApp.main();
-        String result = "10 % 2 = 0" +
+    public void testMiscOprMain() {
+        MiscOpr.main();
+        String result = "x = 10" +
                         System.lineSeparator() +
-                        "10 + 2 = 12" +
+                        "x = 10" +
                         System.lineSeparator() +
-                        "10 + 2 = 12" +
+                        "x = 11 y = 22" +
                         System.lineSeparator() +
-                        "10 - 2 = 8" +
+                        "x = 12 y = 22" +
                         System.lineSeparator() +
-                        "10 * 2 = 20" +
+                        "x = 48" +
                         System.lineSeparator() +
-                        "10 / 2 = 5" +
-                        System.lineSeparator() +
-                        "10 to the power 2 = 100.000000" +
-                        System.lineSeparator() +
-                        "Absolute value of -2050 is: 2050" +
+                        "x = 48 y = 144" +
                         System.lineSeparator();
         assertEquals(result, outContent.toString());
     }
