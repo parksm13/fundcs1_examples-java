@@ -62,6 +62,7 @@
 
 package edu.ecu.cs.fundcs1.ch03;
 
+// BEGIN example
 import java.lang.System;
 
 public class HelloWorld {
@@ -69,3 +70,4 @@ public class HelloWorld {
         System.out.println("Hello, World!");
     }
 }
+// END example
