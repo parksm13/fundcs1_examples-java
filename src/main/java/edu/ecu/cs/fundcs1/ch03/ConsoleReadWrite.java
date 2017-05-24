@@ -20,12 +20,12 @@
  * SOFTWARE.
  */
 
-package edu.ecu.cs.fundcs1.ch03;
-
 // BEGIN example
 // This program demonstrates declaring and initializing variables
 // and constants; assignment statement, arithmetic expression,
 // and writing to and reading from console
+
+package edu.ecu.cs.fundcs1.ch03;
 
 import java.util.Scanner;
 
