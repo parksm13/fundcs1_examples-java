@@ -1,3 +1,4 @@
+// BEGIN example
 package edu.ecu.cs.fundcs1.ch03;
 
 public class MiscOpr
@@ -25,3 +26,4 @@ public class MiscOpr
         System.out.format("x = %d y = %d%n", x, y);
     }
 }
+// END example
