@@ -1,5 +1,6 @@
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
+import edu.ecu.cs.fundcs1.ch03.examples.ConsoleReadWrite;
 import org.junit.*;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
 

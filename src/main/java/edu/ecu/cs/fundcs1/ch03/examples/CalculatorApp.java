@@ -2,7 +2,7 @@
 //TODO: Not clear how Calculator is being used here (it's in the same package)
 
 // BEGIN example
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
 public class CalculatorApp
 {

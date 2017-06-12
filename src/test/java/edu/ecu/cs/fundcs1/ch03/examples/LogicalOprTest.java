@@ -1,5 +1,6 @@
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
+import edu.ecu.cs.fundcs1.ch03.examples.LogicalOpr;
 import org.junit.*;
 
 import java.io.ByteArrayOutputStream;
@@ -9,16 +10,16 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class MiscOprTest {
+public class LogicalOprTest {
 
     // used to test console output from main method in another class
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @BeforeClass
-    public static void beginMiscOprTestOutput() {
-        System.out.format("%nBEGIN MiscOprTest" +
+    public static void beginLogicalOprTestOutput() {
+        System.out.format("%nBEGIN LogicalOprTest" +
                           System.lineSeparator() +
-                          "=================" +
+                          "====================" +
                           System.lineSeparator());
     }
 
@@ -35,26 +36,36 @@ public class MiscOprTest {
 
     @AfterClass
     public static void endHelloWorldTestOutput() {
-        System.out.println("===============" +
+        System.out.println("==================" +
                            System.lineSeparator() +
-                           "END MiscOprTest" +
+                           "END LogicalOprTest" +
                            System.lineSeparator());
     }
 
     @Test
-    public void testMiscOprMain() {
-        MiscOpr.main();
-        String result = "x = 10" +
+    public void testLogicalOprMain() {
+        LogicalOpr.main();
+        String result = "x = 5 y = 10" +
                         System.lineSeparator() +
-                        "x = 10" +
+                        "x < 10 & y > 10 = false" +
                         System.lineSeparator() +
-                        "x = 11 y = 22" +
+                        "x < 10 | y > 10 = true" +
                         System.lineSeparator() +
-                        "x = 12 y = 22" +
+                        "x < 10 ^ y > 10 = true" +
                         System.lineSeparator() +
-                        "x = 48" +
+                        "!(x < 10) = false" +
                         System.lineSeparator() +
-                        "x = 48 y = 144" +
+                        "x & y = 0" +
+                        System.lineSeparator() +
+                        "x | y = 15" +
+                        System.lineSeparator() +
+                        "x ^ y = 15" +
+                        System.lineSeparator() +
+                        "~x = -6" +
+                        System.lineSeparator() +
+                        "x > 5 && y < 10 = false" +
+                        System.lineSeparator() +
+                        "x < 10 || y > 10 = true" +
                         System.lineSeparator();
         assertEquals(result, outContent.toString());
     }

@@ -25,7 +25,7 @@
 // and constants; assignment statement, arithmetic expression,
 // and writing to and reading from console
 
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
 import java.util.Scanner;
 

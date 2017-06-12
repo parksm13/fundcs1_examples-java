@@ -1,7 +1,7 @@
 // BEGIN example
 // Demonstrates boolean and bitwise logical operators
 
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
 public class LogicalOpr
 {

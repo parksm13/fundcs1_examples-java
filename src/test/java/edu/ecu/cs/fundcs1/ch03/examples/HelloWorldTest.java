@@ -1,5 +1,6 @@
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
+import edu.ecu.cs.fundcs1.ch03.examples.HelloWorld;
 import org.junit.*;
 
 import java.io.*;

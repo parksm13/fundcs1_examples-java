@@ -61,7 +61,7 @@
 //TODO: Is this example too large?
 //TODO: Should package name be ECU specific? or should it match the text exactly?
 
-package edu.ecu.cs.fundcs1.ch03;
+package edu.ecu.cs.fundcs1.ch03.examples;
 
 // BEGIN example
 import java.lang.System;
